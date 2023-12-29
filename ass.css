@@ -1,0 +1,66 @@
+
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+/* Style for the MenuBar */
+.menu-bar {
+    -fx-background-color: #333;
+}
+
+.menu-bar .menu {
+    -fx-text-fill: white;
+}
+
+.menu-bar .menu-item {
+    -fx-text-fill: white;
+}
+
+/* Style for the TextArea */
+#codeTextArea {
+    -fx-control-inner-background: #fff;
+    -fx-font-family: "Courier New", monospace;
+}
+
+/* Style for the Label (Status Bar) */
+#statusBar {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 5;
+}
+
+/* Style for the ListView and Button in the left StackPane */
+#directoryPane {
+    -fx-padding: 10;
+}
+
+#directoryListView {
+    -fx-background-color: #f4f4f4;
+}
+
+#directoryListView .list-cell {
+    -fx-background-color: #e0e0e0;
+}
+
+#directoryListView .list-cell:hover {
+    -fx-background-color: #ccc;
+}
+
+/* Style for the StackPane containing the TextArea and TextField/Button in the bottom */
+#terminalPane {
+    -fx-padding: 10;
+}
+
+#terminalTextArea {
+    -fx-control-inner-background: #fff;
+    -fx-font-family: "Courier New", monospace;
+}
+
+#terminalInputField {
+    -fx-prompt-text-fill: #888;
+}
+
+#terminalPane .button {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial", sans-serif;
+}

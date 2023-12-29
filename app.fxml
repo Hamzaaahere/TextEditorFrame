@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="AppController" prefHeight="600.0" prefWidth="800.0">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New"/>
+                        <MenuItem text="Open"/>
+                        <MenuItem text="Save"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Exit"/>
+                    </items>
+                </Menu>
+                <Menu text="Edit">
+                    <items>
+                        <MenuItem text="Undo"/>
+                        <MenuItem text="Redo"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Copy"/>
+                        <MenuItem text="Cut"/>
+                        <MenuItem text="Paste"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TextArea fx:id="codeTextArea" wrapText="true"/>
+    </center>
+    <bottom>
+        <Label fx:id="statusBar" text="Ready"/>
+    </bottom>
+    <left>
+        <StackPane fx:id="directoryPane">
+            <children>
+                <ListView fx:id="directoryListView"/>
+                <Button text="Choose Directory" onAction="#chooseDirectory"/>
+            </children>
+        </StackPane>
+    </left>
+    <bottom>
+        <StackPane fx:id="terminalPane">
+            <children>
+                <TextArea fx:id="terminalTextArea" editable="false"/>
+                <VBox>
+                    <TextField fx:id="terminalInputField" promptText="Type a command..."/>
+                    <Button text="Execute" onAction="#executeCommand"/>
+                </VBox>
+            </children>
+        </StackPane>
+    </bottom>
+</BorderPane>
