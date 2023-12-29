@@ -21,7 +21,7 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("App.fxml"));
         Scene scene = new Scene(loader.load(), 800, 600);
 
-        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("ass.css").toExternalForm());
 
         primaryStage.setTitle("Simple Editor");
         primaryStage.setScene(scene);
